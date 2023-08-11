@@ -13,7 +13,7 @@ app.use(parser.urlencoded({
 app.use(cors());
 app.use(express.json());
 
-const uri = "mongodb+srv://junkuser:junk12345@nodeexpress-jwt-test.ojchbel.mongodb.net/bkList"
+const uri = "mongodb+srv://junkuser:junk12345@nodeexpress-jwt-test.ojchbel.mongodb.net/BookList"
 //const uri = "mongodb://localhost:27017/bookList";
 mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true   }
 );
