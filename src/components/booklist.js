@@ -8,7 +8,7 @@ export default function BookList() {
   
     useEffect(() => {
       axios
-        .get('http://localhost:5000/book')
+        .get('https://exam-backend-3ujm.onrender.com/book')
         .then((res) => {
           setBooks(res.data);
         })
@@ -19,7 +19,7 @@ export default function BookList() {
 
     const deleteBook = (id) => {
       axios
-        .delete('http://localhost:5000/book/' + id)
+        .delete('https://exam-backend-3ujm.onrender.com/book' + id)
         .then((response) => {
           console.log(response.data);
         });
